@@ -184,7 +184,7 @@ controller.hears(["^!reviews$", "^!reviews full$"],["direct_message","direct_men
   });
 });
 
-controller.hears(["^!review","^!review\\s+([^\\s]*)\\s?(.*)$"],["direct_message","direct_mention","mention","ambient"],function(bot,message) {
+controller.hears(["^!review$","^!review\\s+([^\\s]*)\\s?(.*)$"],["direct_message","direct_mention","mention","ambient"],function(bot,message) {
 
   var video_id = message.match[1];
   if (stringIsEmpty(video_id)) {
