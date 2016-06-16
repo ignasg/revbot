@@ -78,7 +78,7 @@ bot.startRTM(function(err,bot,payload) {
 });
 
 controller.hears(["^!help$"],["direct_message","direct_mention","mention","ambient"],function(bot,message) {
-  bot.reply(message,'Try the following commands: ```!bio @id``` - read a bio, ```!writebio contents``` - to post your bio, ```!reviews [full]``` - to get a list of available reviews, ```!review id|url``` - to read a review, ```!review id|url contents``` - to write a review for url');
+  bot.reply(message,'Try the following commands: ```!bio id``` - read a bio. Note id is without the @, ```!writebio contents``` - to post your bio, ```!reviews [full]``` - to get a list of available reviews, ```!review id|url``` - to read a review, ```!review id|url contents``` - to write a review for url');
 });
 
 
