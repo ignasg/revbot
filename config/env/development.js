@@ -12,7 +12,7 @@ module.exports = {
     // Enable mongoose debug mode
     debug: process.env.MONGODB_DEBUG || false
   },
-  slackToken:'xoxb-51273549318-za70nu7vrC75uHtgl606Iy4d',
+  slackToken:'',
   log: {
     // logging with Morgan - https://github.com/expressjs/morgan
     // Can specify one of 'combined', 'common', 'dev', 'short', 'tiny'
