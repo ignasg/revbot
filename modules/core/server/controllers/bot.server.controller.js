@@ -82,7 +82,7 @@ controller.hears(["^!help$"],["direct_message","direct_mention","mention","ambie
 });
 
 
-controller.hears(["^!bio\\s+(.*)"],["direct_message","direct_mention","mention","ambient"],function(bot,message) {
+controller.hears(["^!bio$", "^!bio\\s+(.*)"],["direct_message","direct_mention","mention","ambient"],function(bot,message) {
   var userName = message.match[1];
   if (stringIsEmpty(userName)) {
     return bot.reply(message,noEmptyStringReploy);
@@ -101,7 +101,7 @@ controller.hears(["^!bio\\s+(.*)"],["direct_message","direct_mention","mention",
   });
 });
 
-controller.hears(["^!writebio\\s+(.*)"],["direct_message","direct_mention","mention","ambient"],function(bot,message) {
+controller.hears(["^!writebio$", "^!writebio\\s+(.*)"],["direct_message","direct_mention","mention","ambient"],function(bot,message) {
   var bio = message.match[1];
   if (stringIsEmpty(bio)) {
     return bot.reply(message,noEmptyStringReploy);
@@ -184,7 +184,7 @@ controller.hears(["^!reviews$", "^!reviews full$"],["direct_message","direct_men
   });
 });
 
-controller.hears(["^!review\\s+([^\\s]*)\\s?(.*)$"],["direct_message","direct_mention","mention","ambient"],function(bot,message) {
+controller.hears(["^!review","^!review\\s+([^\\s]*)\\s?(.*)$"],["direct_message","direct_mention","mention","ambient"],function(bot,message) {
 
   var video_id = message.match[1];
   if (stringIsEmpty(video_id)) {
