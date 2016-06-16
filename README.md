@@ -1,5 +1,11 @@
 Revbot is built using MEAN.JS frameworks which is a bit of overkill for it, but it is used anyway. Read below how to setup/develop the mean.JS part.
 
+Several enviroment variables need to be configured for function:
+SLACK_TOKEN => set to a bot api intergration token generated on slack website
+MONGOHQ_URL or MONGOLAB_URI => set to your mongo database URL
+SESSION_SECRET => set to some random text
+
+
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/meanjs/mean?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/meanjs/mean.svg?branch=master)](https://travis-ci.org/meanjs/mean)
 [![Dependencies Status](https://david-dm.org/meanjs/mean.svg)](https://david-dm.org/meanjs/mean)
