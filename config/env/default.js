@@ -7,7 +7,7 @@ module.exports = {
     keywords: '',
     googleAnalyticsTrackingID: process.env.GOOGLE_ANALYTICS_TRACKING_ID || 'GOOGLE_ANALYTICS_TRACKING_ID'
   },
-
+  slackToken:process.env.SLACK_TOKEN || '',
   port: process.env.PORT || 3000,
   templateEngine: 'swig',
   // Session Cookie settings
